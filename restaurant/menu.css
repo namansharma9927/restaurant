@@ -1,0 +1,37 @@
+/* Customize the styles for the menu page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #f81a1a;
+  }
+  
+  .menu-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .menu-item {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #9605f0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: left;
+  }
+  
+  .menu-item h3 {
+    color: #040404;
+  }
+  
+  .menu-item p {
+    color: #777;
+  }
+  

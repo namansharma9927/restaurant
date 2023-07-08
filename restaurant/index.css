@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
+
+/* Reset default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Big Shoulders Text', cursive;
+  background-color: #f5f5f5;
+}
+
+.nav-flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 0;
+  backdrop-filter: blur(10px);
+}
+
+.nav-flex-row li {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 20px 15px;
+}
+
+.nav-flex-row li a {
+  color: #555555;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-flex-row li a:hover {
+  color: #222222;
+}
+
+.section-intro {
+  height: 100vh;
+  background-image: url(img/petr-sevcovic-qE1jxYXiwOA-unsplash.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section-intro h1 {
+  color: #ffffff;
+  font-size: 4em;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.link-to-book-wrapper {
+  margin-top: 30px;
+}
+
+.link-to-book {
+  color: #ffffff;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.link-to-book:hover {
+  background-color: #ffffff;
+  color: #95999e;
+  text-decoration: none;
+}
+
+.about-section {
+  background-color: #ffffff;
+  padding: 50px 30px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-section p,
+.about-section h3 {
+  text-align: center;
+  font-size: 1.6em;
+  line-height: 1.5;
+  color: #555555;
+}
+
+.carousel-inner {
+  height: 60vh;
+}
+
+.row-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex-column-form {
+  flex-basis: 100%;
+  margin: 30px 20px;
+}
+
+.btn.btn-primary {
+  color: #ffffff;
+  background-color: #ff6f00;
+  text-transform: uppercase;
+  font-size: 1em;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 30px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn.btn-primary:hover {
+  background-color: #f96802;
+}
+
+.opening-time,
+.contact-adress {
+  flex-basis: calc(50% - 40px);
+  margin: 30px 20px;
+  font-size: 1.2em;
+  color: #555555;
+}
+
+.form-group p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: #555555;
+}
+
+.opening-time p span,
+.contact-adress p span {
+  display: block;
+  line-height: 1.5;
+  color: #555555;
+}
+
+@media (max-width: 768px) {
+  .nav-flex-row {
+    padding: 5px 0;
+  }
+
+  .section-intro h1 {
+    font-size: 2.5em;
+  }
+
+  .about-section p,
+  .about-section h3 {
+    font-size: 1.2em;
+  }
+
+  .carousel-inner {
+    height: 40vh;
+  }
+
+  .row-flex {
+    flex-wrap: wrap;
+  }
+
+  .flex-column-form,
+  .opening-time,
+  .contact-adress {
+    flex-basis: 100%;
+  }
+
+  .opening-time,
+  .contact-adress {
+    margin-top: 30px;
+  }
+
+  .opening-time p span,
+  .contact-adress p span {
+    text-align: center;
+  }
+}
